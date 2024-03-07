@@ -31,6 +31,7 @@ And the Image Restorastion used to restore image pixel caused of the motion when
 On this project, ResNet50 from Keras is used as pre-trained model.
 
 The Model Summary:
+
 ![Model Summary](./img/model_summary.png)
 
 
@@ -82,7 +83,9 @@ history = resnet_model.fit(
 
 
 Training Result For ResNet50 Model:
+
 ![Training Accuracy](./img/training_acc.png)
+
 ![Training Loss](./img/training_loss.png)
 
 Based on that graphic, it seems like overfit. But, let's check on the Evaluation.
@@ -102,6 +105,7 @@ test_generator = test_datagen.flow_from_directory(
 ```
 
 Prediction Result from ResNet50:
+
 ![Evaluation](./img/evaluation.png)
 
 We can see that the model perfectly predict the test data.
